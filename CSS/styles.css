@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: antiquewhite;
+    padding: 3rem;
+}
+
+.elemento-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 5px;
+    margin: 20px;
+    background-color: rgb(245, 225, 199);
+    align-items: center;
+}
+.titulo-bienvenida{
+    margin-bottom: 10px;
+}
+
+.form{
+    padding: 10px;
+}
+
+.btn{
+ align-items: center;
+ align-self: center;
+ background-color: rgb(50, 50, 99);
+ color: white;
+ border-radius: 5px;
+ height: 1.2rem;
+ width:auto;
+}
+
+label{
+    border-radius: 5px;
+    width: auto;
+}

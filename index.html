@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Personal</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <!-- login de sesion-->
+    <section class="elemento-flex">
+        <div class="contenedor contenedor-login"  id="contenedor-login">
+            <h1 class="titulo-bienvenida" align="center">Inicio de Sesion</h1>
+            <form action="" class="form" id="formulario-login">
+                <label for="email"> Email:</label>
+                <input type="email" name="email" id="mi-email" placeholder="example@gmail.com">
+                <br><hr><br>
+                <label for="psw">Contraseña:</label>
+                <input type="text" name="psw" id="mi-psw" placeholder="Min 8 Caracteres">
+                <br><hr><br>
+                <button class="btn btn-login btn-ingreso" type="button" onclick="ingresar()">Ingresar</button>
+                <button class="btn btn-login btn-registro" type="button" onclick="crearUsuario()">Crea tu Agenda</button>
+            </form>
+        </div>
+        <!-- registro de usuario -->
+    </section>
+    <section class="elemento-flex">
+        <div class="contenedor contenedor-registro ">
+            <h1 class="titulo-bienvenida" align="center">Registro de Usuario</h1>
+            <form action="" id="formulario-login" class="form">
+                <label for="name">Nombre:</label>
+                <input type="text" name="name" id="mi-name" placeholder="Nombre Completo">
+                <br><hr><br>
+                <label for="email"> Email:</label>
+                <input type="email" name="email" id="mi-email" placeholder="example@gmail.com">
+                <br><hr><br>
+                <label for="psw">Contraseña:</label>
+                <input type="text" name="psw" id="mi-psw" placeholder="Min 8 Caracteres">
+                <br><hr><br>
+                <button class="btn btn-login btn-registro" type="button" onclick="registrarUsuario()">Registrarse</button>
+                <button class="btn btn-login btn-ingreso" type="button" onclick="volverInicio()">Inicio de Sesion</button>
+
+            </form>
+        </div>
+    </section>
+        <!-- registro de actividad -->
+        <section class="elemento-flex">
+            <div class="contenedor  contenedor-new-actividad" >
+                <h1 class="titulo-bienvenida" align="center">Añade un recordatorio nuevo</h1>
+                <button class="btn btn-login btn-salir" type="button" onclick="verHorario()">Ver Horario</button>
+                <button class="btn btn-login btn-actividades" type="button" onclick="volverInicio()">Salir</button>
+                <form action="" class="form" id="formulario-login">
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" name="fecha" id="mi-fecha">
+                    <br><hr><br>
+                    <label for="inicio">Hora Inicio:</label>
+                    <input type="time" name="inicio" id="mi-inicio">
+                    <br><hr><br>
+                    <label for="final">Hora Final:</label>
+                    <input type="time" name="final" id="mi-final">
+                    <br><hr><br>
+                    <label for="titulo">Titulo de Actividad:</label>
+                    <input type="text" name="titulo" id="mi-actividad" placeholder="Parcial Javascript">
+                    <br><hr><br>
+                    <label for="descripcion"> Descripcion:</label>
+                    <textarea name="descripcion" id="mi-descripcion" placeholder="Salon Sputnik en centro de estudio..."></textarea>
+                    <br><hr><br>
+                    <button class="btn btn-login btn-registro" type="button">Agregar</button>
+                </form>
+            </div>
+        </section>
+        <!-- Visualizacion de horario -->
+        <section class="elemento-flex">
+            <div class="contenedor" id="contenedor-horario " >
+                <h1 class="titulo-bienvenida" align="center">Tus Pendientes</h1>
+                <button class="btn btn-login btn-salir" type="button" onclick="agregarUsuario()">Nuevo</button>
+                <button class="btn btn-login btn-actividades" type="button" onclick="volverInicio()">Salir</button>
+                <table class="pendientes" border="1px " >
+                    <thead>
+                        <th>
+                            Fecha
+                        </th>
+                        <th>
+                            Horario
+                        </th>
+                        <th>
+                            Actividad
+                        </th>
+                        <th>
+                            Descripcion
+                        </th>
+                        <th>
+                            Estado
+                        </th>
+                    </thead>
+                    <tbody id="tbody">
+                        <th colspan="5">Crea tus pendientes.</th>
+                    </tbody>
+
+                </table>
+            </div>
+ <script src="JS/login.js"></script>
+ <script src="JS/filtro.js"></script>
+ <script src="JS/newActivity.js"></script>
+ <script src="JS/main.js"></script>
+ <script src="JS/registro.js"></script>
+</body>
+</html>
